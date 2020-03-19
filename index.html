@@ -48,7 +48,9 @@ function getFHIREndpoint(){
 
   fhirUri = $("#fhirEndpoint").val()
   console.log(fhirUri);
-  window.location = "/index.html"
+
+  window.location.href = "fhirUri"
+  return false;
 
 }
 
