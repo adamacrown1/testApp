@@ -27,7 +27,7 @@
                   <div class="navbar" id="navbarsExampleDefault">
                     <form class="form-inline my-2">
                       <input id="fhirEndpoint" class="form-control mr-sm-2" type="text" placeholder="FHIR Endpoint ID" aria-label="Search" style="width:800px">
-                      <button class="btn btn-outline-success my-2 my-sm-0" onClick="getFHIREndpoint()" type="submit">Go</button>
+                      <button class="btn btn-outline-success my-2 my-sm-0" onClick="getFHIREndpoint()" type="reset">Go</button>
                       </form>
                     </div>
                   </nav>
@@ -37,6 +37,7 @@
                       function getFHIREndpoint(){
                         fhirUri = $("#fhirEndpoint").val()
                         console.log(fhirUri);
+
                         window.location = fhirUri
                         return false;}
                       </script>
